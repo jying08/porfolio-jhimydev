@@ -1,0 +1,58 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Arquitectura Empresarial",
+    company: "UPC",
+    description:
+      "Utilizando el software Archi, se analizaron y graficaron los dominios de negocio, aplicación, datos y tecnología de una empresa. Se aplicaron las fases del framework TOGAF y la metodología ADM para mejorar cada dominio y optimizar la arquitectura empresarial..",
+    link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Arquitectura de Aplicaciones Web",
+    company: "UPC",
+    description:
+      "Desarrollo de una aplicación web para un negocio utilizando Spring Boot y Angular, integrando frontend y backend.",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Interacción Humano-Computadora (IHC)",
+    company: "UPC",
+    description:
+      "Diseño de UX/UI con Figma y desarrollo de prototipos de alta fidelidad. Introducción a GitHub y metodología GitFlow.",
+  },
+  {
+    date: "Septiembre 2021",
+    title: "Arquitectura de Negocios",
+    company: "UPC",
+    description:
+      "En este curso, se graficaron los procesos importantes de una idea de negocio, utilizando diversas herramientas de modelado. El objetivo fue optimizar y mejorar estos procesos para aumentar la eficiencia operativa.",
+  },
+  {
+    date: "Septiembre 2020",
+    title: "Business Predictive Analytics",
+    company: "UPC",
+    description:
+      "Creación de modelos predictivos para análisis de datos de negocio. Proyecto final: desarrollo de un modelo predictivo aplicable a un caso real.",
+  },
+  {
+    date: "Septiembre 2020",
+    title: "Desarrollo en C++",
+    company: "UPC",
+    description:
+      "Introducción al desarrollo en C++, cubriendo desde conceptos básicos hasta la creación de un juego en consola utilizando clases y punteros",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

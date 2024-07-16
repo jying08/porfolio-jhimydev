@@ -1,0 +1,47 @@
+---
+const personalImageAlt = "Jhimy Diestra"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/perfilJhmy.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/jhimy-diestra-gaspar-9b1510245"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Jhimy
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+  +2 años de experiencia en desarrollo Full Stack. <strong
+      >Ingeniero de Sistemas en formación y apasionado por la creación de aplicaciones web innovadoras</strong
+    > desde Lima, Perú 🇵🇪. Actualmente, estoy en el octavo ciclo de mi carrera en la Universidad Peruana de Ciencias Aplicadas (UPC), especializado en frontend con Angular y Astro, y backend con Java y Spring Boot.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:diestragasparjhimy@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/jhimy-diestra-gaspar-9b1510245">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
