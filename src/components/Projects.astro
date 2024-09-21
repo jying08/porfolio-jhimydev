@@ -11,29 +11,40 @@ const TAGS = {
     class: "bg-black text-white",
     icon: NextJS,
   },
+  ANGULAR: {
+    name: "Angular.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
   TAILWIND: {
     name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  AZURE: {
+    name: "Azure DevOps",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
 }
 const PROJECTS = [
   {
-    title: "API - Backend de Oasis Andino",
+    title: "API para Gestión de Pizzería",
     description:
-      "Desarrollo desde cero usando Java, Spring Boot y JPA. Conexión a una base de datos PostgreSQL. Backend containerizado con Docker y desplegado en Google Cloud Run.",
-    link: "https://oasis-andino-backend-fi6jg5aela-uc.a.run.app/oasis-andino/api/swagger-ui/index.html",
-    github: "https://github.com/jying08/app-oasis-andino-backend",
-    image: "/projects/api-oasis.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Desarrollé una API RESTful para la gestión de una pizzería utilizando Java 17 y Spring Boot. Esta API maneja pedidos, clientes y órdenes de servicio, con seguridad implementada a través de Spring Security y JWT. La base de datos utilizada es MySQL, y el proyecto está documentado con Swagger para facilitar su uso y comprensión. Además, configuré pipelines de CI/CD en Azure DevOps y gestioné el proyecto bajo la metodología Scrum, organizando sprints para asegurar un desarrollo ágil y colaborativo, optimizando así el flujo de trabajo y reduciendo el tiempo de entrega.",
+    link: "https://backend-pizza-bwfebna6etg2awgu.canadacentral-01.azurewebsites.net/swagger-ui/index.html",
+    github: "https://dev.azure.com/jhimyjhimy26/API-Gesti%C3%B3n-Pizzer%C3%ADa-spring/_git/Backend-API-pizzeria",
+    image: "/projects/project1.webp",
+    tags: [TAGS.AZURE],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Aplicación Fullstack para Hospedaje",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Desarrollé una aplicación web fullstack para gestionar un hospedaje, digitalizando el proceso de reservas y pagos. El backend está hecho en Java 21 con Spring Boot y PostgreSQL. El frontend, desarrollado en Angular, incluye un sistema de administración para gestionar habitaciones, pagos y servicios adicionales. Utilicé MapStruct para facilitar el mapeo de datos entre inglés y español. Además, implementé pipelines de CI/CD en Azure DevOps para automatizar el despliegue tanto del frontend como del backend en Azure Static Web Apps y Azure App Service, gestionando el proyecto con la metodología Scrum para asegurar un desarrollo ágil y colaborativo.",
+    link: "https://salmon-hill-058ea171e.5.azurestaticapps.net/",
+    github: "https://dev.azure.com/Oasis-Andino/App%20Web%20Oasis%20Andino/_git/frontend-oasis-andino-angular.git",
+    image: "/projects/PROJECTO2.webp",
+    tags: [TAGS.ANGULAR, TAGS.TAILWIND],
   },
 ]
 ---
@@ -71,7 +82,7 @@ const PROJECTS = [
           {github && (
             <LinkButton href={github}>
               <GitHub class="size-6" />
-              Code
+              Azure DevOps
               
             </LinkButton>
           )}
